@@ -6,17 +6,18 @@ Dette projekt er lavet som en del af Tema 8.
 Vi har lavet et dynamisk website med HTML, CSS og JavaScript, hvor indholdet bliver hentet fra et API.
 
 Sitet består af flere sider, hvor brugeren kan:
-• se en liste med indhold
-• klikke sig videre til en detaljeside
-• bruge filtrering
-• udfylde en formular
+
+- se en liste med indhold
+- klikke sig videre til en detaljeside
+- bruge filtrering
+- udfylde en formular
 
 ## Links
 
-• GitHub repository: [indsæt link]
-• GitHub Pages: [indsæt link]
-• Figma: [indsæt link]
-• Trello: [indsæt link]
+- GitHub repository: [indsæt link]
+- GitHub Pages: [indsæt link]
+- Figma: [indsæt link]
+- Trello: [indsæt link]
 
 ---
 
@@ -42,12 +43,12 @@ project/
 
 ### Filbeskrivelser
 
-• **index.html** – forsiden
-• **recipelist.html** – viser en liste med data fra API'et
-• **recipedetails.html** – viser detaljer om en valgt opskrift
-• **form.html** – indeholder formularen
-• **style.css** – styrer designet
-• **JavaScript-filer** – styrer det dynamiske indhold på de forskellige sider
+- **index.html** – forsiden
+- **recipelist.html** – viser en liste med data fra API'et
+- **recipedetails.html** – viser detaljer om en valgt opskrift
+- **form.html** – indeholder formularen
+- **style.css** – styrer designet
+- **JavaScript-filer** – styrer det dynamiske indhold på de forskellige sider
 
 ---
 
@@ -152,13 +153,13 @@ Vi henter data fra et API i JSON-format.
 
 ### Felter vi bruger
 
-• **id** – bruges til at sende brugeren videre til detaljesiden
-• **title** – opskriftsnavn
-• **description** – beskrivelse af opskriften
-• **category** – opskriftkategori (fx dessert, hovedret, forret)
-• **cookTime** – tilberedningstid i minutter
-• **servings** – antal portioner
-• **thumbnail** – opskriftsbillede
+- **id** – bruges til at sende brugeren videre til detaljesiden
+- **title** – opskriftsnavn
+- **description** – beskrivelse af opskriften
+- **category** – opskriftkategori (fx dessert, hovedret, forret)
+- **cookTime** – tilberedningstid i minutter
+- **servings** – antal portioner
+- **thumbnail** – opskriftsbillede
 
 ---
 
@@ -168,9 +169,9 @@ Vi har lavet en formular, hvor brugeren kan indtaste oplysninger.
 
 **HTML-validering:**
 
-• `required` – feltet skal udfyldes
-• `type="email"` – validerer email-format
-• `type="number"` – accepterer kun tal
+- `required` – feltet skal udfyldes
+- `type="email"` – validerer email-format
+- `type="number"` – accepterer kun tal
 
 Det sikrer, at brugeren ikke kan sende formularen, hvis felterne ikke er udfyldt korrekt.
 
@@ -184,10 +185,10 @@ Vi har arbejdet med branches, så vi ikke sad og ændrede i det samme på samme 
 
 ### Eksempler på branches
 
-• `feature-forside`
-• `feature-opskriftsliste`
-• `feature-detaljeside`
-• `feature-formular`
+- `feature-forside`
+- `feature-opskriftsliste`
+- `feature-detaljeside`
+- `feature-formular`
 
 ### Workflow
 
@@ -207,10 +208,10 @@ Vi har tænkt bæredygtighed ind i projektet ved at holde løsningen forholdsvis
 
 **Tiltag:**
 
-• Bruge få og lette filer
-• Undgå tunge frameworks
-• Genbruge kode
-• Optimere billeder og indhold
+- Bruge få og lette filer
+- Undgå tunge frameworks
+- Genbruge kode
+- Optimere billeder og indhold
 
 Et lettere website kræver færre ressourcer at loade og bruge.
 
@@ -223,10 +224,10 @@ Det var også lidt svært at få id med videre i URL’en til detaljesiden.
 
 **Løsninger:**
 
-• Console.logge data undervejs
-• Teste fetch-kald separat
-• Bruge URLSearchParams
-• Dele opgaverne mere tydeligt i gruppen
+- Console.logge data undervejs
+- Teste fetch-kald separat
+- Bruge URLSearchParams
+- Dele opgaverne mere tydeligt i gruppen
 
 ---
 
@@ -241,18 +242,18 @@ Projektet har givet os erfaring med JavaScript, fetch, DOM-manipulation, formula
 
 Hvis vi skulle arbejde videre med projektet, kunne vi forbedre det ved at tilføje:
 
-• Søgefunktion
-• Flere filtre
-• Bedre error handling
-• Loading state
-• Mere avanceret formular
-• Bedre responsivt design
+- Søgefunktion
+- Flere filtre
+- Bedre error handling
+- Loading state
+- Mere avanceret formular
+- Bedre responsivt design
 
 ---
 
 ## Gruppemedlemmer
 
-• [navn 1]
-• [navn 2]
-• [navn 3]
-• [navn 4]
+- Steen I. Sko
+- Peter Pedal
+- Karsten Lange Løgstrup
+- Pia Planlægger
