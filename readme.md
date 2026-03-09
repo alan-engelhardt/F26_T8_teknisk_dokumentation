@@ -27,15 +27,15 @@ Projektet er opdelt i HTML, CSS og JavaScript-filer.
 ```
 project/
 ├── index.html
-├── productlist.html
-├── productdetails.html
+├── recipelist.html
+├── recipedetails.html
 ├── form.html
 ├── css/
 │   └── style.css
 ├── js/
 │   ├── index.js
-│   ├── productlist.js
-│   ├── productdetails.js
+│   ├── recipelist.js
+│   ├── recipedetails.js
 │   └── form.js
 └── README.md
 ```
@@ -43,8 +43,8 @@ project/
 ### Filbeskrivelser
 
 • **index.html** – forsiden
-• **productlist.html** – viser en liste med data fra API'et
-• **productdetails.html** – viser detaljer om et valgt produkt
+• **recipelist.html** – viser en liste med data fra API'et
+• **recipedetails.html** – viser detaljer om en valgt opskrift
 • **form.html** – indeholder formularen
 • **style.css** – styrer designet
 • **JavaScript-filer** – styrer det dynamiske indhold på de forskellige sider
@@ -60,9 +60,9 @@ Vi har opdelt JavaScript, så hver side har sin egen fil.
 Bruges på forsiden.
 Her bliver indhold vist dynamisk, fx links eller kategorier.
 
-### productlist.js
+### recipelist.js
 
-Henter data fra API’et og viser en liste med produkter på siden.
+Henter data fra API'et og viser en liste med opskrifter på siden.
 
 **Flow:**
 
@@ -71,13 +71,13 @@ Henter data fra API’et og viser en liste med produkter på siden.
 3. Data hentes fra API
 4. Data bliver gennemgået med loop
 5. HTML bliver indsat i DOM'en
-6. Brugeren kan klikke på et produkt
+6. Brugeren kan klikke på en opskrift
 
-### productdetails.js
+### recipedetails.js
 
-Bruges til detaljesiden. Den læser et id fra URL'en og henter derefter det rigtige produkt fra API'et.
+Bruges til detaljesiden. Den læser et id fra URL'en og henter derefter den rigtige opskrift fra API'et.
 
-Det gør det muligt at genbruge den samme HTML-side til mange produkter. I stedet for at lave én side per produkt, bruger vi ét id i URL'en til at vise det rigtige indhold.
+Det gør det muligt at genbruge den samme HTML-side til mange opskrifter. I stedet for at lave én side per opskrift, bruger vi ét id i URL'en til at vise det rigtige indhold.
 
 ### form.js
 
@@ -94,17 +94,17 @@ Vi har prøvet at navngive vores filer, variabler og funktioner så tydeligt som
 ### Eksempler på variabler
 
 ```javascript
-const productContainer;
-const productId;
+const recipeContainer;
+const recipeId;
 const selectedCategory;
 ```
 
 ### Eksempler på funktioner
 
 ```javascript
-fetchProducts();
-showProducts();
-showProductDetails();
+fetchRecipes();
+showRecipes();
+showRecipeDetails();
 validateForm();
 ```
 
@@ -120,11 +120,11 @@ Fx ved funktioner, fetch-kald og steder hvor der sker DOM-manipulation.
 **Eksempel:**
 
 ```javascript
-// Henter produkter fra API'et
-async function fetchProducts() {
+// Henter opskrifter fra API'et
+async function fetchRecipes() {
   const res = await fetch(apiURL);
   const data = await res.json();
-  return data.products;
+  return data.recipes;
 }
 ```
 
@@ -141,10 +141,11 @@ Vi henter data fra et API i JSON-format.
 ```json
 {
   "id": 1,
-  "title": "Produktnavn",
+  "title": "Opskriftsnavn",
   "description": "Kort beskrivelse",
-  "category": "beauty",
-  "price": 99,
+  "category": "dessert",
+  "cookTime": 45,
+  "servings": 4,
   "thumbnail": "billede.jpg"
 }
 ```
@@ -152,11 +153,12 @@ Vi henter data fra et API i JSON-format.
 ### Felter vi bruger
 
 • **id** – bruges til at sende brugeren videre til detaljesiden
-• **title** – produktnavn
-• **description** – beskrivelse af produktet
-• **category** – produktkategori
-• **price** – pris
-• **thumbnail** – produktbillede
+• **title** – opskriftsnavn
+• **description** – beskrivelse af opskriften
+• **category** – opskriftkategori (fx dessert, hovedret, forret)
+• **cookTime** – tilberedningstid i minutter
+• **servings** – antal portioner
+• **thumbnail** – opskriftsbillede
 
 ---
 
@@ -183,7 +185,7 @@ Vi har arbejdet med branches, så vi ikke sad og ændrede i det samme på samme 
 ### Eksempler på branches
 
 • `feature-forside`
-• `feature-produktliste`
+• `feature-opskriftsliste`
 • `feature-detaljeside`
 • `feature-formular`
 
