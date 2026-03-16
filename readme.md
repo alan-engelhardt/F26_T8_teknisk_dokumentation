@@ -206,16 +206,14 @@ Det gjorde det nemmere at holde styr på, hvem der lavede hvad.
 
 ## Bæredygtighed
 
-Vi har tænkt bæredygtighed ind i projektet ved at holde løsningen forholdsvis enkel.
+Vi har tænkt bæredygtighed ind i projektet ved at holde page weight under 250 kb samt en enkel informationasarkitektur.
 
 **Tiltag:**
 
-- Bruge få og lette filer
-- Undgå tunge frameworks
-- Genbruge kode
-- Optimere billeder og indhold
-
-Et lettere website kræver færre ressourcer at loade og bruge.
+- Ingen videoer
+- Ingen tunge frameworks
+- Genbruge af kode
+- Optimerede billeder
 
 ---
 
@@ -238,11 +236,8 @@ Det var også lidt svært at få id med videre i URL’en til detaljesiden.
 Hvis vi skulle arbejde videre med projektet, kunne vi forbedre det ved at tilføje:
 
 - Søgefunktion
-- Flere filtre
-- Bedre error handling
+- Error handling
 - Loading state
-- Mere avanceret formular
-- Bedre responsivt design
 
 ---
 
