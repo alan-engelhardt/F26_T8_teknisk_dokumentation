@@ -14,7 +14,7 @@ Sitet består af flere sider, hvor brugeren kan:
 
 ## Links
 
-- GitHub repository: [indsæt link]
+- GitHub repository: https://github.com/alan-engelhardt/F26_T8_teknisk_dokumentation
 - GitHub Pages: [indsæt link]
 - Figma: [indsæt link]
 - Trello: [indsæt link]
