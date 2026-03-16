@@ -90,7 +90,7 @@ Denne fil bruges til at sikre, at brugeren udfylder formularen korrekt. Det gør
 
 ## Navngivning
 
-Vi har navngive vores filer, variabler og funktioner så de så tydeligt som muligt er selvforklarende.
+Vi har navngivet vores filer, variabler og funktioner så de så tydeligt som muligt er selvforklarende.
 
 ### Eksempler på variabler
 
